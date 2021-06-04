@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :phone_number
       t.integer :college_id
       t.integer :exam_id
-      t.DateTime :start_time
+      t.datetime :start_time
 
       t.timestamps
     end
