@@ -5,6 +5,6 @@
   phone_number: user.phone_number,
   college_id: user.college_id,
   exam_id: user.exam_id,
-  start_time: user.start_time,
+
 }
 end
