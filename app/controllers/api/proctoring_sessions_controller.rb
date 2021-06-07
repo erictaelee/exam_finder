@@ -11,11 +11,9 @@ class Api::ProctoringSessionsController < ApplicationController
 
   def create
     @proctoring_session = ProctoringSession.new(
-      first_name: params[:first_name],
-      last_name: params[:last_name],
-      phone_number: params[:phone_number],
-      # college_id: @user.college_id,
-      # exam_id: @user.exam_id
+      user_id: params[:user_id],
+      exam_id: params[:exam_id],
+      start_time: params[:start_time]
     )
     @proctoring_session.save
     render 'show.json.jb'
