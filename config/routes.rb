@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
   namespace :api do
-    get "/users" => "users#index"
-    post "/users" => "users#create"
-    get "/users/:id" => "users#show"
-    patch "/users/:id" => "users#update"
-    delete "/users/:id" => "users#destroy"
+    get "/proctoring_sessions" => "proctoring_sessions#index"
+    post "/proctoring_sessions" => "proctoring_sessions#create"
+    get "/proctoring_sessions/:id" => "proctoring_sessions#show"
+    patch "/proctoring_sessions/:id" => "proctoring_sessions#update"
+    delete "/proctoring_sessions/:id" => "proctoring_sessions#destroy"
   end
 end
