@@ -1,0 +1,5 @@
+{
+  user_id: @proctoring_session.user_id,
+  exam_id: @proctoring_session.exam_id,
+  start_time: @proctoring_session.start_time,
+}
