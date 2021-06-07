@@ -1,0 +1,2 @@
+class ProctoringSession < ApplicationRecord
+end
