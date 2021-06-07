@@ -14,11 +14,11 @@ class Api::UsersController < ApplicationController
       first_name: params[:first_name],
       last_name: params[:last_name],
       phone_number: params[:phone_number],
-      college_id: @user.college_id,
-      exam_id: @user.exam_id
+      # college_id: @user.college_id,
+      # exam_id: @user.exam_id
     )
     @user.save
-    render 'show.jason.jb'
+    render 'show.json.jb'
   end
 
   def destroy
